@@ -1,0 +1,108 @@
+.main {
+  max-width: 1100px;
+  display: flex;
+  flex-direction: row;
+  gap: 79px;
+}
+
+.img {
+  flex: 1 0 auto;
+  max-width: 434px;
+}
+
+.img > img {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0 0 13px;
+}
+
+.text {
+  font-family: "PT Root UI";
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0 0 26px;
+}
+
+.privacy {
+  width: 454px;
+  font-family: "PT Root UI";
+  font-weight: 400;
+  font-size: 16px;
+  color: #818798;
+  margin: 0 0 50px;
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+}
+
+.button {
+  width: 281px;
+  height: 76px;
+  color: #ffffff;
+  background-color: #fd4d35;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 60px;
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 0 30px;
+}
+
+.button:active {
+  transform: scale(0.99);
+}
+
+.text_low {
+  font-family: "PT Root UI";
+  font-weight: 400;
+  font-size: 14px;
+  color: #818798;
+  margin: 0 0 107px;
+}
+
+@media (max-width: 1200px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text {
+    margin: 0 0 36px;
+  }
+
+  .privacy {
+    width: 100%;
+    margin: 0 0 22px;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .text_low {
+    display: none;
+  }
+}

@@ -1,0 +1,14 @@
+.header {
+  margin: 120px 0 68px;
+  font-family: "Rubik";
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    margin: 100px 0 20px;
+    font-size: 24px;
+  }
+}

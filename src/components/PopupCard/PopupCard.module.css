@@ -1,0 +1,109 @@
+.card {
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 30px;
+  flex: 1 0 auto;
+  border-radius: 20px;
+  border: 2px solid #d3d6dd;
+  padding: 26px 22px 20px 26px;
+  cursor: pointer;
+}
+
+.card:has(input:checked) {
+  border: 2px solid #01b9c5;
+  background-color: rgba(1, 195, 187, 0.05);
+}
+
+.radio {
+  accent-color: #01b9c5;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  font-size: 26px;
+  color: #2d3242;
+}
+
+.title > input {
+  width: 22px;
+  height: 22px;
+}
+
+.without_sale {
+  font-family: "PT Root UI";
+  font-weight: 700;
+  font-size: 20px;
+  color: #2d3242;
+  text-decoration: line-through;
+}
+
+.with_sale {
+  position: relative;
+  font-family: "PT Root UI";
+  font-weight: 700;
+  font-size: 46px;
+}
+
+.divider {
+  align-self: center;
+  width: 134px;
+  border: 1px solid #e7eaf1;
+  margin: 16px 0 24px;
+}
+
+.sale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -10px;
+  right: -50px;
+  width: 50px;
+  height: 50px;
+  background-image: url(/src/assets/icons/star.svg);
+  background-size: contain;
+  color: #ffffff;
+  font-family: "PT Root UI";
+  font-weight: 500;
+  font-size: 13.33px;
+}
+
+@media (max-width: 1200px) {
+  .card {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 24px 20px 18px;
+    margin-top: 0px;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .without_sale {
+    margin-left: auto;
+    order: 1;
+  }
+
+  .with_sale {
+    font-size: 44px;
+  }
+
+  .sale {
+    font-size: 10px;
+    width: 40px;
+    height: 40px;
+    right: -40px;
+  }
+}

@@ -1,0 +1,19 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 171px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1326px) {
+  .app {
+    padding: 0 108px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .app {
+    padding: 0 20px;
+  }
+}

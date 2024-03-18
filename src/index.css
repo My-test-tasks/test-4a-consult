@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "PT Root UI";
+  src: url("./assets/fonts/PTRootUI-Regular.woff2") format("woff2"),
+    url("./assets/fonts/PTRootUI-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Root UI";
+  src: url("./assets/fonts/PTRootUI-Medium.woff2") format("woff2"),
+    url("./assets/fonts/PTRootUI-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Root UI";
+  src: url("./assets/fonts/PTRootUI-Bold.woff2") format("woff2"),
+    url("./assets/fonts/PTRootUI-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("./assets/fonts/Rubik-Medium.woff2") format("woff2"),
+    url("./assets/fonts/Rubik-Medium.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("./assets/fonts/Rubik-Bold.woff2") format("woff2"),
+    url("./assets/fonts/Rubik-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("./assets/fonts/BebasNeue-Regular.woff2") format("woff2"),
+    url("./assets/fonts/BebasNeue-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #2d3242;
+  background-color: #f5f7f7;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+body:has(dialog[open]) {
+  overflow: hidden;
+}
+
+a {
+  color: #2d97f9;
+  text-decoration: none;
+}
+
+#root {
+  width: 100%;
+}
